@@ -13,14 +13,15 @@ class Car {
   }
 }
 
-describe ('Car', () => {
-  it ('can park', () => {
-    const car = new Car();
-    assert.equal(car.park(), 'stopped');
-  });
+let accounts;
 
-  it ('can drive', () => {
-    const car = new Car();
-    assert.equal(car.drive(), 'vroom');
+beforeEach(async () => {
+  // Get a list of all accounts
+  accounts = await web3.eth.getAccounts();
+});
+
+describe('Inbox', () => {
+  it('deploys a contract', () => {
+    console.log(accounts)
   });
 });
