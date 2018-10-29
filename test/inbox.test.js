@@ -29,6 +29,11 @@ beforeEach(async () => {
 
 describe('Inbox', () => {
   it('deploys a contract', () => {
-    console.log(inbox);
+    //console.log(inbox);
+    
+    // After we deploy the contract on the test network.
+    // An address will be created. Make an assertion that
+    // is this a defined value.
+    assert.ok(inbox.options.address);
   });
 });
