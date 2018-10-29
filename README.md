@@ -1,7 +1,7 @@
 <h1 align="center">ReactJS TMDB App</h1>
 <br>
 <p align="center">
-  <img alt="ReactJS" title="ReactJS" src="https://2.bp.blogspot.com/-zCJa5fv2GvI/WZr3runDMxI/AAAAAAAAcOA/xaVaP_FtfAoBgUEudfDuYi5j2lKY-CWwwCLcBGAs/s1600/Solidity.png" width="310">
+  <img alt="ReactJS" title="ReactJS" src="https://2.bp.blogspot.com/-zCJa5fv2GvI/WZr3runDMxI/AAAAAAAAcOA/xaVaP_FtfAoBgUEudfDuYi5j2lKY-CWwwCLcBGAs/s1600/Solidity.png" width="142">
 </p>
 <p align="center">
     <img src="https://img.shields.io/badge/yarn-v1.10.1-green.svg" />
