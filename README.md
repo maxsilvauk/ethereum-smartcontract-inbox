@@ -8,9 +8,6 @@
     <img src="https://img.shields.io/badge/yarn-v1.10.1-green.svg" />
     <img src="https://img.shields.io/badge/node-v8.0.0-green.svg" />
     <img src="https://img.shields.io/badge/solidity-v0.4.17-green.svg" />
-    <img src="https://img.shields.io/badges/solc-v0.4.25-green.svg" />
-    <img src="https://img.shields.io/badges/web3-v1.0.0-green.svg" />
-    <img src="https://img.shields.io/badges/mocha-v5.2.0-green.svg" />
 </p>
 
 
