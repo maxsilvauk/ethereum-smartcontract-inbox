@@ -4,16 +4,6 @@ const Web3 = require('web3'); // Require Web3 constructor.
 const web3 = new Web3(ganache.provider()); // Provider we want to connect to.
 const { interface, bytecode } = require('../compile');
 
-class Car {
-  park() {
-    return 'stopped';
-  }
-
-  drive() {
-    return 'vroom';
-  }
-}
-
 let accounts;
 let inbox;
 
@@ -28,12 +18,20 @@ beforeEach(async () => {
 });
 
 describe('Inbox', () => {
-  it('deploys a contract', () => {
-    //console.log(inbox);
-    
+  it('Deploys a contract', () => {
     // After we deploy the contract on the test network.
     // An address will be created. Make an assertion that
     // is this a defined value.
     assert.ok(inbox.options.address);
+  });
+
+  it ('Has a default message', async () => {
+    const message = await inbox.methods.message().call()
+  });
+
+  it ('Can change the message', async () => {
+    await inbox.methods.setMessage('bye').send({ from: accounts[0] })
+    const message = await inbox.methods.message().call();
+    assert.equal(message, 'bye')
   });
 });
