@@ -42,9 +42,6 @@ git clone https://github.com/maxsilvauk/ethereum-smartcontract-inbox.git
 ```
 yarn
 ```
-* To download all dependencies
-```
-```
 * Testing using Mocha
 ```
 yarn test
