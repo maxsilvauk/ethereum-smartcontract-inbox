@@ -2,6 +2,8 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
+// The metamask seed phrase & the rinkeby network
+// we want to connect to.
 const provider = new HDWalletProvider(
   'add enforce fun spring curious tonight divorce minor before celery card trial',
   'https://rinkeby.infura.io/orDImgKRzwNrVCDrAk5Q'
@@ -9,6 +11,7 @@ const provider = new HDWalletProvider(
 
 const web3 = new Web3(provider);
 
+// The deployment async function.
 const deploy = async () => {
   const accounts = await web3.eth.getAccounts();
 
