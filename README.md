@@ -19,7 +19,7 @@
 
 ## Introduction
 
-An inbox ethereum smart contract.
+Inbox ethereum smart contract.
 
 ## Built-With
 
